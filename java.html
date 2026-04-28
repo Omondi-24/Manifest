@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type="text/javascript">
+            function testAlertDialog(){
+                alert("Something error");
+            }
+            function testConfirmDialog(){
+                var result=confirm("Do you want to continue?");
+                if(result){
+                    alert("OK Next lesson!");
+                }else{
+                    alert("Bye!");
+                }
+            }
+            function testPromptDialog(){
+                var result=prompt("Enter your age:","20");
+                if(result!=null){
+                    alert("Your age is "+result);
+                }
+            }
+            function msg() {
+                alert("hello! this is message");
+            }
+            function getcube(number){
+                alert(number*number*number);
+            }
+            function getInfo(){
+                return "Are you a student at Kirinyaga University?";
+            }
+            document.write(getInfo());
+        </script>
+        <h2>Confirmation Dialog Box</h2>
+        <button onclick="testConfirmDialog()">Confirm</button>
+        <h2>Alert Dialog Box</h2>
+        <button onclick="testAlertDialog()">Alert</button>
+        <h2>Prompt dialog Box</h2>
+        <button onclick="testPromptDialog()">Prompt</button>
+        <h2>Function eg</h2>
+        <input type="button" onclick="msg()" value="call function"/>
+        <h2>Function Arguements</h2>
+        <input type="button" onclick="getcube(10)" value="click"/>
+    </body>
+</html>

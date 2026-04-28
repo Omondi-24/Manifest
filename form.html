@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form name="form" action="">
+            First name: <input type="text" name="first_name"/><br>
+            Last name: <input type="text" name="last_name"/><br>
+            Password: <input type="password" name="password"><br>
+            Description: <br>
+            <textarea rows="6" cols="30" name="Description">enter description
+            </textarea><br>
+            <input type="checkbox" name="maths" value="on" checked>maths
+            <input type="checkbox" name="physics" value="on">physics <br>
+            <input type="radio" name="maths" value="maths">maths
+            <input type="radio" name="physics" value="physics">physics <br>
+            <select name="dropdown" size="2" multiple>
+                <option value="maths" selected>maths</option>
+                <option value="physics" label="physo">physics</option>
+            </select><br>
+            <input type="file" name="uploadfile" accept="audio/*,image/*" multiple><br>
+            <input type="submit" name="submit" value="submit"/>
+            <input type="reset" name="reset" value="reset"/>
+            <input type="button" name="ok" value="OK"/><br>
+            <input type="image" name="imagebutton" src="Images/Mainoo.jpg" height="50"><br>
+            <p>This is page 10</p>
+            <input type="hidden" name="pagename" value="10"/>
+            <input type="submit" name="submit" value="submit"/>
+            <input type="reset" name="reset" value="reset">
+            <fieldset>
+                <legend>Your Info</legend>
+                <label for="Full name">Full name</label><br>
+                <input type="text" name="full name"><br>
+                <label for="E-mail">Email</label><br>
+                <input type="email" name="Email"><br>
+                <label for="class">class</label><br>
+                <input type="text" name="class"><br>
+            </fieldset>  
+            <hr>   
+        </form>
+    </body>
+</html>
